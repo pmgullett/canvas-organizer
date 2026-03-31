@@ -1,0 +1,9 @@
+name: canvas-organizer
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.12
+  - pip
+  - pip:
+    - -e .        # for running tests later             # Installs your project in editable mode

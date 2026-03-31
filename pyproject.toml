@@ -1,0 +1,18 @@
+[project]
+name = "canvas-organizer"
+version = "0.2.0"
+description = "Organizes Canvas LMS student submission files into clean student directories"
+readme = "README.md"
+requires-python = ">=3.8"
+authors = [{ name = "Phil Gullett" }]
+license = { text = "MIT" }
+keywords = ["canvas", "lms", "education", "file-organization"]
+
+[project.scripts]
+organize-canvas = "canvas_organizer.organizer:main"
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
